@@ -131,6 +131,7 @@ class Profiler {
 			// Check for Laravel Version
 			'controller' =>		function()
 								{
+									return 2;
 									global $app;
 									if (strpos($app::VERSION, '4.1') !== FALSE)
 									{
@@ -148,6 +149,7 @@ class Profiler {
 			'file' =>			function($includedFiles){ return count($includedFiles); },
 			'view' =>			function($view_data){ return count($view_data); },
 			'session' =>		function(){ return count(\Session::all()); },
+			'server' =>		function(){ return count($_SERVER); },
 			'storage' =>		function($storageLogs){ return count($storageLogs); },
 			'config' =>			function($config){ return count($config); },
 			'auth' =>			function() { return \Auth::user()->email ? \Auth::user()->email : 'User'; },
