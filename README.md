@@ -1,5 +1,8 @@
 # Profiler
 A PHP 5.3 profiler for [Laravel 4.0.x and 4.1.x](http://www.laravel.com).  
+
+Fork based on [sebklaus/profiler](https://github.com/sebklaus/profiler), and others...
+
 Backend based on sorora/omni, frontend based on loic-sharma/profiler. Some features inspired by papajoker/profiler, some features by juy/profiler with additions by myself.
 
 [![Latest Stable Version](https://poser.pugx.org/sebklaus/profiler/version.png)](https://packagist.org/packages/sebklaus/profiler) [![Total Downloads](https://poser.pugx.org/sebklaus/profiler/d/total.png)](https://packagist.org/packages/sebklaus/profiler)
@@ -91,20 +94,21 @@ You can (re-)order, disable and adjust label and title for the various info sect
 
 	// config.php
 	'btns' => array(
-		'environment'=> array('label'=>'ENV','title'=>'Environment'),
-		'memory'=>		array('label'=>'MEM','title'=>'Memory'),
-		'controller'=>	array('label'=>'CTRL','title'=>'Controller'),
-		'routes'=>		array('label'=>'ROUTES'),
-		'log'=>			array('label'=>'LOG'),
-		'sql'=>			array('label'=>'SQL'),
-		'checkpoints'=> array('label'=>'TIME'),
-		'file'=>		array('label'=>'FILES'),
-		'view'=>		array('label'=>'VIEW'),
-		'session'=>		array('label'=>'SESSION'),
-		'config'=>		array('label'=>'CONFIG'),
-		'storage'=>		array('label'=>'LOGS','title'=>'Logs in storage'),
-		'auth'=>		array('label'=>'AUTH'),
-		'auth-sentry'=> array('label'=>'AUTH')
+		'environment' => array('label'=>'ENV','title'=>'Environment'),
+		'memory'      => array('label'=>'MEM','title'=>'Memory'),
+		'controller'  => array('label'=>'CTRL','title'=>'Controller'),
+		'routes'      => array('label'=>'ROUTES'),
+		'log'         => array('label'=>'LOG'),
+		'sql'         => array('label'=>'SQL'),
+		'checkpoints' => array('label'=>'TIME'),
+		'file'        => array('label'=>'FILES'),
+		'view'        => array('label'=>'VIEW'),
+		'session'     => array('label'=>'SESSION'),
+		'server'      => array('label'=>'SERVER'),
+		'config'      => array('label'=>'CONFIG'),
+		'storage'     => array('label'=>'LOGS','title'=>'Logs in storage'),
+		'auth'        => array('label'=>'AUTH'),
+		'auth-sentry' => array('label'=>'AUTH')
 	),
 		
 Add a link to your preferred (Laravel) documentation (or really anywhere you want) by changing the value of `doc`.  
