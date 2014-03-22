@@ -22,20 +22,21 @@ return array(
 
 	// Buttons: order /disable buttons
 	'btns' => array(
-		'environment'=> array('label'=>'ENV','title'=>'Environment'),
-		'memory'=>		array('label'=>'MEM','title'=>'Memory'),
-		'controller'=>	array('label'=>'CTRL','title'=>'Controller'),
-		'routes'=>		array('label'=>'ROUTES'),
-		'log'=>			array('label'=>'LOG'),
-		'sql'=>			array('label'=>'SQL'),
-		'checkpoints'=> array('label'=>'TIME'),
-		'file'=>		array('label'=>'FILES'),
-		'view'=>		array('label'=>'VIEW'),
-		'session'=>		array('label'=>'SESSION'),
-		'config'=>		array('label'=>'CONFIG'),
-		'storage'=>		array('label'=>'LOGS','title'=>'Logs in storage'),
-		'auth'=>		array('label'=>'AUTH'),
-		'auth-sentry'=> array('label'=>'AUTH')
+		'environment' => array('label'=>'ENV','title'=>'Environment'),
+		'memory'      => array('label'=>'MEM','title'=>'Memory'),
+		'controller'  => array('label'=>'CTRL','title'=>'Controller'),
+		'routes'      => array('label'=>'ROUTES'),
+		'log'         => array('label'=>'LOG'),
+		'sql'         => array('label'=>'SQL'),
+		'checkpoints' => array('label'=>'TIME'),
+		'file'        => array('label'=>'FILES'),
+		'view'        => array('label'=>'VIEW'),
+		'session'     => array('label'=>'SESSION'),
+		'server'      => array('label'=>'SERVER'),
+		'config'      => array('label'=>'CONFIG'),
+		'storage'     => array('label'=>'LOGS','title'=>'Logs in storage'),
+		'auth'        => array('label'=>'AUTH'),
+		'auth-sentry' => array('label'=>'AUTH')
 	),
 	'doc' => 'http://www.laravel.com/docs/',
 	
