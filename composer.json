@@ -1,14 +1,14 @@
 {
-    "name": "sebklaus/profiler",
-    "description": "A profiler for Laravel 4. A continuation of the retired juy/profiler.",
-    "keywords": ["laravel","profiler", "debug bar", "anbu", "juy"],
-    "homepage": "http://github.com/sebklaus/profiler",
+    "name": "seantrane/profiler",
+    "description": "A profiler for Laravel 4. A bespoke version of the sebklaus/profiler, which is a continuation of the retired juy/profiler.",
+    "keywords": ["laravel", "profiler", "debug bar", "anbu", "juy", "sebklaus"],
+    "homepage": "http://github.com/seantrane/profiler",
     "license": "MIT",
     "authors": [
         {
-            "name": "Sebastian Klaus",
-            "email": "sebastian@klaus.com.au",
-            "homepage": "http://sebastian.klaus.com.au",
+            "name": "Sean Trane",
+            "email": "thisemail@thatdomain.com",
+            "homepage": "https://github.com/seantrane",
             "role": "Developer"
         }
     ],
@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Sebklaus\\Profiler": "src/"
+            "Seantrane\\Profiler": "src/"
         }
     },
     "minimum-stability": "dev"
