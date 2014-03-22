@@ -1,7 +1,7 @@
-<?php namespace Sebklaus\Profiler\Providers;
+<?php namespace Seantrane\Profiler\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Sebklaus\Profiler\Facades\Profiler;
+use Seantrane\Profiler\Facades\Profiler;
 
 class ProfilerServiceProvider extends ServiceProvider {
 
@@ -21,7 +21,7 @@ class ProfilerServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('sebklaus/profiler');
+		$this->package('seantrane/profiler');
 		// Include package routes
 		include __DIR__ . '/../../routes.php';
 		// activate profiler
@@ -50,8 +50,8 @@ class ProfilerServiceProvider extends ServiceProvider {
 	{
 		$this->app['profiler'] = $this->app->share(function($app)
 		{
-			return new \Sebklaus\Profiler\Profiler(
-				new \Sebklaus\Profiler\Loggers\Time
+			return new \Seantrane\Profiler\Profiler(
+				new \Seantrane\Profiler\Loggers\Time
 			);
 		});
 	}
@@ -66,7 +66,7 @@ class ProfilerServiceProvider extends ServiceProvider {
 		$this->app->booting(function()
 		{
 			$loader = \Illuminate\Foundation\AliasLoader::getInstance();
-			$loader->alias('Profiler', 'Sebklaus\Profiler\Facades\Profiler');
+			$loader->alias('Profiler', 'Seantrane\Profiler\Facades\Profiler');
 		});
 	}
 
@@ -77,7 +77,7 @@ class ProfilerServiceProvider extends ServiceProvider {
 	 */
 	protected function loadConfig()
 	{
-		$this->app['config']->package('sebklaus/profiler', __DIR__.'/../../../config');
+		$this->app['config']->package('seantrane/profiler', __DIR__.'/../../../config');
 	}
 
 	/**

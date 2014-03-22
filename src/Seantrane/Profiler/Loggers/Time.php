@@ -1,4 +1,4 @@
-<?php namespace Sebklaus\Profiler\Loggers;
+<?php namespace Seantrane\Profiler\Loggers;
 
 class Time {
 

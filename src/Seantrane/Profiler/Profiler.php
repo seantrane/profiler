@@ -1,6 +1,6 @@
-<?php namespace Sebklaus\Profiler;
+<?php namespace Seantrane\Profiler;
 
-use Sebklaus\Profiler\Loggers\Time;
+use Seantrane\Profiler\Loggers\Time;
 
 class Profiler {
 

@@ -1,4 +1,4 @@
-<?php namespace Sebklaus\Profiler\Facades;
+<?php namespace Seantrane\Profiler\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
