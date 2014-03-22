@@ -47,6 +47,10 @@
 				@include('profiler::profiler._session')
 			</div>
 
+			<div class="anbu-tab-pane anbu-table anbu-server">
+				@include('profiler::profiler._server')
+			</div>
+
 			@if (\Config::get('profiler::btns.config'))
 			<div class="anbu-tab-pane anbu-table anbu-config">
 				@include('profiler::profiler._config')
