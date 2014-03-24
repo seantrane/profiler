@@ -1,12 +1,12 @@
-<?php $session = array_merge(Session::all(),array('cookie'=>$_COOKIE)) ?>
+<?php $input = array('Input'=>Input::all(),'POST'=>$_POST,'GET'=>$_GET) ?>
 
-@if(!empty($session))
+@if(!empty($input))
 	<table>
 		<tr>
 			<th>Key</th>
 			<th>Value</th>
 		</tr>
-		@foreach($session as $key => $value)
+		@foreach($input as $key => $value)
 			<tr>
 				<td>{{ $key }}</td>
 				<td>
@@ -20,5 +20,5 @@
 		@endforeach
 	</table>
 @else
-	<span class="anbu-empty">There are no session entries.</span>
+	<span class="anbu-empty">There are no input entries.</span>
 @endif

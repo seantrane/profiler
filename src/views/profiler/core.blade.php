@@ -47,6 +47,10 @@
 				@include('profiler::profiler._session')
 			</div>
 
+			<div class="anbu-tab-pane anbu-table anbu-input">
+				@include('profiler::profiler._input')
+			</div>
+
 			<div class="anbu-tab-pane anbu-table anbu-server">
 				@include('profiler::profiler._server')
 			</div>

@@ -32,6 +32,7 @@ return array(
 		'file'        => array('label'=>'FILES'),
 		'view'        => array('label'=>'VIEW'),
 		'session'     => array('label'=>'SESSION'),
+		'input'       => array('label'=>'INPUT'),
 		'server'      => array('label'=>'SERVER'),
 		'config'      => array('label'=>'CONFIG'),
 		'storage'     => array('label'=>'LOGS','title'=>'Logs in storage'),
