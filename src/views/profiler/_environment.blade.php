@@ -17,7 +17,14 @@
 	</tr>
 	<tr>
 		<td>Loaded modules</td>
-		<td>{{ implode(", ", get_loaded_extensions()) }}</td>
+		<td>
+<?php
+$aPHPext = get_loaded_extensions();
+array_shift($aPHPext);
+sort($aPHPext, SORT_NATURAL | SORT_FLAG_CASE);
+echo implode(', ', $aPHPext);
+?>
+		</td>
 	</tr>
 	<tr>
 		<td>Timezone</td>
