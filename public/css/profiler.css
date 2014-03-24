@@ -32,6 +32,10 @@
 	background-image:none;
 }
 
+#anbu-open-tabs {
+	padding:0 0 1em !important;
+}
+
 #anbu-open-tabs li:first-child {
 	margin-left:6em;
 }
