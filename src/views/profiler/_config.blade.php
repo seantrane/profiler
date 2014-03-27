@@ -10,7 +10,15 @@
 				<td>
 					@if (is_array($value))
 						<pre>{{ print_r($value, true) }}</pre>
-					@elseif (is_object($value) && !method_exists($value, '__toString'))
+					@elseif (isset($value) and empty($value) and !is_bool($value))
+						{{ $value }}
+					@elseif (is_bool($value))
+						{{ ($value)?'true':'false' }}
+					@elseif (is_object($value) and !method_exists($value, '__toString'))
+						<pre>{{ print_r($value, true) }}</pre>
+					@elseif (is_object($value) and method_exists($value, '__toString'))
+						{{ $value }}
+					@elseif (is_object($value) and !empty($value))
 						{{ get_class($value) }}
 					@else
 						{{ $value }}
